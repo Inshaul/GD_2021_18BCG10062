@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     bool gameHasEnded = false;
+    public float restartDelay = 1f;
     // Start is called before the first frame update
     public void EndGame()
     {
@@ -13,7 +14,7 @@ public class GameManager : MonoBehaviour
         {
             gameHasEnded = true;
             Debug.Log("Game Over");
-            Restart();
+            Invoke("Restart", restartDelay);
         }
         
     }
