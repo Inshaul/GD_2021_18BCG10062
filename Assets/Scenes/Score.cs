@@ -7,14 +7,14 @@ public class Score : MonoBehaviour
 {
     public Text scoreText;
     public float scoreAmount;
-    public float L_t=1f;
+    public float L_t=.5f;
 
 
 
     // Start is called before the first frame update
     void Start()
     {
-        scoreAmount = 0f;
+        scoreAmount = 1f;
 
     }
 
@@ -29,7 +29,7 @@ public class Score : MonoBehaviour
         if (L_t <= 0)
         {
             scoreAmount++;
-            L_t = 1f;
+            L_t = .5f;
         }
     }
 }
