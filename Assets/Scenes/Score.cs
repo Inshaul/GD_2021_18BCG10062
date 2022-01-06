@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Score : MonoBehaviour
 {
     public Text scoreText;
-    float scoreAmount=1f;
+    float scoreAmount=0f;
     public float L_t=3f;
     //public
 
